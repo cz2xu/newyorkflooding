@@ -1,0 +1,162 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    width: 30%;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+#chapters {
+    margin: 120px 18px;
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#chapters>.chapter {
+    margin-bottom: 50px;
+    font-family: Helvetica;
+}
+
+#chapters>.chapter>img {
+    width: 97%;
+}
+
+#map {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 70%;	/* 100% of viewport width */
+	height: 100vh;	/* 100% of viewport height */
+}
+
+/* Modal styles */
+#screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+    display: none;
+}
+
+.modal {
+    display: none;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 2;
+    padding: 30px;
+    font-family: Helvetica;
+}
+
+.modal>.modal-title {
+    
+}
+
+.modal>.modal-body{
+   
+}
+
+.modal>.close-button {
+    color: #cccccc;
+    position:absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    background: none !important;
+    border: none !important;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal>.close-button:hover {
+   /* color: #bbbbbb !important;*/
+}
+
+.button-default {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-family: Helvetica;
+    cursor: pointer;
+    margin: 20px;
+    border: none;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.button-default:hover {
+    background-color: mediumvioletred;
+}
+
+#about {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+#color-changer {
+    left: 40%;
+    top: 0;
+    width: 50px;
+}
+
+.park-image {
+    width: 200px;
+    height: 100px;
+}
+
+#layers-control {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    width: 120px;
+}
+
+#layers-control a {
+    font-size: 13px;
+    color: white;
+    display: block;
+    margin: 0 0 5px 0;
+    padding: 0;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    text-align: center;
+    background-color: #ccc;
+}
+
+#layers-control a:last-child {
+    border: none;
+}
+
+#layers-control a:hover {
+    background-color: #000000;
+}
+
+#layers-control a.active {
+    background-color: 000000;
+    color: #ffffff;
+}
+
+#layers-control a.active:hover {
+    background: #000000;
+}
